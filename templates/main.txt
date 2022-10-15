@@ -1,0 +1,10 @@
+"""Dummy module docstring"""
+
+
+def main():
+    """Dummy method docstring"""
+    pass
+
+
+if __name__ == "__main__":
+    main()

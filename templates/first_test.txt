@@ -1,0 +1,10 @@
+"""Dummy module docstring"""
+import unittest
+
+
+class MyTestClass(unittest.TestCase):
+    """Dummy class docstring"""
+
+    def test_my_first_test(self):
+        """Dummy method docstring"""
+        self.assertEqual('foo'.upper(), 'FOO')
