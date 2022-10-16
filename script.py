@@ -1,4 +1,5 @@
 import os
+import pip
 
 # Templates Path
 MAIN_TEMPLATE_PATH = "./templates/main.txt"
@@ -36,3 +37,15 @@ file = open("./.vscode/settings.json", "w").write(settings_template.read())
 # Creating first_class.py file
 first_class_template = open(FIRST_CLASS_TEMPLATE_PATH, "r")
 file = open("./src/my_first_class.py", "w").write(first_class_template.read())
+
+# Creating python environment
+os.system("python -m venv venv")
+
+# TODO Activating python environment
+
+# Updating pip
+pip.main(["install", "--upgrade", "pip"])
+
+# Installing basic dependencies
+pip.main(["install", "-U", "autopep8"])
+pip.main(["install", "-U", "pylint"])
